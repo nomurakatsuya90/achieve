@@ -1,0 +1,155 @@
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+body {
+  /* 追記,削除 */
+  height:100%;
+}
+.container {
+  width: 980px;
+  margin: 0 auto;
+  min-height: 100%;
+  position: relative;
+}
+ul {
+  /* 余白を削除 */
+  margin: 0;
+  padding: 0;
+}
+li {
+  /* リスト先頭の黒丸を削除 */
+  list-style: none;
+}
+.header {
+  background-color: #F5B4B3;
+  height: 50px;
+  font-size: 1.5rem;
+}
+ul.top_menu {
+  float: right;
+}
+.top_menu li {
+  float: left;
+  width: auto;
+}
+.top_menu li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 15px;
+}
+.top_menu li a:hover {
+  text-decoration: underline;
+}
+.logo_image {
+  width: 110px;
+  float: left;
+  margin: 0;
+}
+.image_area{
+  width: 100%;
+}
+.wrapper{  /* asideとarticleを包む */
+  margin-top: 10px;
+  padding-bottom: 100px;
+}
+.side_menu{
+  width: 300px;
+  float: left;
+}
+.side_menu li{
+  background-color: #F5B4B3;
+  height: 6rem;
+  margin-bottom: 10px;
+}
+ /* 追記 20210121 k.nomura*/
+.side_menu li.toiawase {
+  background-color: #FBEAEA;
+}
+.side_menu a:hover{
+  opacity: 0.6;
+}
+.side_menu li a{
+  font-size:2rem;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 2rem;
+}
+ /* 追記 20210121 k.nomura*/
+.side_menu li.toiawase a{
+  color: #000;
+}
+.content{
+  width: 660px;
+  margin-left:20px;
+  float: left;
+  font-size: 1.5rem;
+}
+/* 追記 ここから 20210121 k.nomura */
+.content table {
+  width: 660px;
+  border-collapse: collapse;
+  border:none;
+}
+.content td{
+  border: 0px none;
+}
+.content table tr {
+  height: 7rem;
+  font-weight: bold;
+}
+.content table tr td:nth-child(1) {
+  width: 150px;
+  text-align: right;
+}
+.content table tr td:nth-child(2) {
+  padding: 10px;
+}
+.content table input[type = "text"]{
+  width: 480px;
+}
+.content textarea{
+  width: 480px;
+  overflow:hidden;
+}
+.content p{
+  text-align: center;
+}
+.content input.button_submit {
+  background-color: #3198AB;
+  color: #fff;
+  font-weight: bold;
+  border-style: none;
+  width: 80px;
+  height: 40px;
+  font-size: 2.5rem;
+  text-align: center;
+  letter-spacing: 10px;
+  padding-left: 10px;
+}
+.content input.button_submit:hover {
+  opacity: 0.6;
+}
+/* 追記ここまで */
+.footer{
+  background-color: #4D4D4D;
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: table;
+}
+.footer p {
+  font-size: 1rem;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>株式会社DIVE</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header clearfix">
+        <a href="index.html">
+          <img src="./images/logo.png" class="logo_image">
+        </a>
+        <nav>
+          <!-- clearfixを追記 -->
+          <ul class="top_menu clearfix">
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="#">事業内容</a></li>
+            <li><a href="#">会社概要</a></li>
+            <li><a href="#">お問い合わせ</a></li>
+          </ul>
+        </nav>
+      </header>
+      <img src="./images/contact.png" class="image_area">
+      <div class="wrapper clearfix"> <!-- 忘れやすい -->
+        <aside class="side_menu">
+          <nav> <!-- この行から追記 -->
+            <ul>
+              <li><a href="#">事業内容</a></li>
+              <li><a href="#">会社概要</a></li>
+              <li class="toiawase"><a href="#">お問い合わせ</a></li>
+            </ul>
+          </nav>
+        </aside>
+        <article class="content">
+          <form action="">
+            <table border="1">
+              <tr>
+                <td>お名前</td>
+                <td>
+                    <input type="text" style = "width: 480px;">
+                </td>
+              </tr>
+              <tr>
+                <td>メールアドレス</td>
+                <td>
+                    <input type="text">
+                </td>
+              </tr>
+              <tr>
+                <td>性別</td>
+                <td>
+                  <input type="radio" name="gender">男
+                  <input type="radio" name="gender">女
+                </td>
+              </tr>
+              <tr>
+                <td>お問い合わせ内容</td>
+                <td>
+                    <textarea rows="2"></textarea>
+                </td>
+              </tr>
+            </table>
+            <p>
+              <input class="button_submit" type="submit" value="送信">
+            </p>
+          </form>
+        </article>
+      </div>
+      <footer class="footer">
+        <p>Copyright © 2018 DIVE INC All RIGHTS RESERVED.</p>
+      </footer>
+    </div>
+  </body>
+</html>
