@@ -1,0 +1,117 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  text-align: center;
+}
+.main-header {
+  padding-bottom: 15%;
+  width: 100%;
+  background-size: cover;
+  background-image: url("../images/header.jpg");
+  background-attachment: fixed;
+  position: relative;
+  height: 200px;
+}
+/* ここから */
+/* 20210123 k.nomura */
+/* ヘッダー部の上部隙間対策 */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+header {
+  height: 50px;
+  background-color: #333333;
+  margin: 0px;
+  padding: 0px;
+}
+header ul {
+  list-style: none;
+}
+header ul a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header li {
+    /* 上右下左 pxないと効かなかった*/
+    margin:10px 30px 0px 0px;
+}
+header li.left {  /* 【注意】 liと.leftに隙間開けない */
+  float: left;
+}
+header ul div.right-group {  /* 右寄せfloatの順番対処※1 */
+  float: right;
+}
+header li.right {
+  float: left;
+}
+header ul:after {  /* ★怪しい liのfloatのclearafix? */
+  content: "";
+  clear: both;
+  display: block;
+}
+/* ここまでがheader部分の実装 */
+.main-header img {  /* ★文字位置・大きさと予想 */
+/* main画像（白い「Achieve」の文字の画像）部分の実装 */
+  width: 20%;
+  height: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.about {  /* ★高さ調整くらいな気が */
+/* About Achieve部分の実装 */
+  height: 200px;
+}
+.about p {
+  margin-bottom: 30px;
+}
+/* ここから */
+.function {  /* ここもfloatがいるように思う⇒不要。table*/
+  height: 400px;
+  background-color: #D3D3D3;
+  padding: 30px;
+}
+/* 202101223 k.nomura */
+.function-images {  /* 全体のdiv側 ↓とどのスタイル分担？*/
+  margin: 0 auto;  /* 【中央寄せ】これだけだった・・*/
+  display: table;
+  padding: 50px;
+}
+.function-image {  /*個々のdiv側　↑とどのスタイル分担？*/
+  /* float: left; */
+  /* margin: 50px; */
+  display: table-cell;
+  width: 200px;
+}
+/* ここまでがfunction部分の実装 */
+footer {  /*文字位置・文字色・背景色だけ？ */
+/* footer部分の実装 */
+  height: 100px;
+  color: #fff;
+  background-color: #2B3D4F;
+  position: relative;
+}
+footer div {
+  position:absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+	bottom: 0;
+  padding: 10px;
+}
+footer p {
+  padding: 5px;
+}
+/* 定型 20210123 k.nomura*/
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
