@@ -37,7 +37,7 @@ header ul a {
 
 header li {
     /* 上右下左 pxないと効かなかった*/
-    margin:10px 30px 0px 0px;
+    margin:10px 30px 0px 40px;
 }
 header li.left {  /* 【注意】 liと.leftに隙間開けない */
   float: left;
